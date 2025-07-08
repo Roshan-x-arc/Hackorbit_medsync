@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="drlogin.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Doctor Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Patient Reports Section -->
+    <section class="patient-reports">
+      <h2>Patient Reports - Pritish </h2>
+
+      <!-- Plus button to add/view more graphs -->
+      <button id="addGraphBtn" class="plus-btn"> Add/View Graph</button>
+
+      <div class="graph-grid">
+        <div class="graph-container">
+          <h3>Blood Pressure</h3>
+          <canvas id="bloodPressureGraph"></canvas>
+        </div>
+        <div class="graph-container">
+          <h3>Sleep Progress</h3>
+          <canvas id="sleepGraph"></canvas>
+        </div>
+        <div class="graph-container">
+          <h3>Stress Level</h3>
+          <canvas id="stressGraph"></canvas>
+        </div>
+        <div class="graph-container">
+          <h3>Heart Rate</h3>
+          <canvas id="heartRateGraph"></canvas>
+        </div>
+      </div>
+
+      <!-- Modal for adding/viewing other graphs -->
+      <div id="graphModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Select Graph to View</h3>
+          <ul>
+            <li>Weight Trend</li>
+            <li>Cholesterol Levels</li>
+            <li>Exercise Duration</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="drlogin.js"></script>
+</body>
+</html>
+
+
