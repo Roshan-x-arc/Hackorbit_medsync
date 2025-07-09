@@ -1,4 +1,4 @@
-https://medsync102.netlify.app
+
 
 Medsync – Smart Healthcare Companion
 
