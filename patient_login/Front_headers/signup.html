@@ -74,6 +74,7 @@
       background-color: #3d9293;
     }
   </style>
+  <script type="module" src="register.js" defer></script>
 </head>
 <body>
   <div class="signup-container">
@@ -90,7 +91,7 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required />
 
-      <button type="submit">Sign Up</button>
+      <button type="button" onclick="redirectToPatient()">Sign Up</button>
     </form>
 
     <div class="role-buttons">
@@ -104,6 +105,11 @@
       alert("You chose to sign up as " + role);
       // You can redirect based on role if needed, e.g.:
       // window.location.href = role.toLowerCase() + "-signup.html";
+    }
+
+    function redirectToPatient() {
+    // You can validate input here before redirecting if needed
+    window.location.href = "patient.html";
     }
   </script>
 </body>
