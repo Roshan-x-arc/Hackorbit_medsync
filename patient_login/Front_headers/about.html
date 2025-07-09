@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - MedSync</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2e8b75; /* same green tone */
+    }
+
+    .login-btn {
+      background-color: #2e8b75;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #256e5f;
+    }
+
+    .main {
+      max-width: 800px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .main h2 {
+      color: #2e8b75;
+      margin-bottom: 10px;
+    }
+
+    .main p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .main a {
+      color: #2e8b75;
+      text-decoration: none;
+    }
+
+    .main a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-section {
+      margin-top: 50px;
+      padding: 30px;
+      background-color: #f8fefe;
+      border-radius: 12px;
+    }
+
+    .cta-section h3 {
+      color: #2e8b75;
+      margin-bottom: 15px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .cta-buttons a {
+      padding: 12px 24px;
+      background-color: #2e8b75;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #256e5f;
+    }
+
+    @media (max-width: 600px) {
+      .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .login-btn {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MedSync</div>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2>About MedSync</h2>
+    <p><strong>Our Mission:</strong> To connect humanity through healthcare by promoting safe, voluntary blood donation across communities.</p>
+    <p>MedHumanity is built to raise awareness and provide easier access to life-saving resources. We bring together hospitals, donors, and social groups to ensure faster, fairer, and more inclusive health support for all.</p>
+    <p>We believe in the power of people, partnerships, and compassion-driven technology.</p>
+    <p><a href="#">Potential collaborators:</a> blood banks, hospitals, colleges, volunteer groups.</p>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <h3>Donate Blood for the Betterment of Society</h3>
+      <p>Be the reason someone lives. Help humankind with a single act of kindness.</p>
+      <div class="cta-buttons">
+        <a href="#">Donate Now</a>
+        <a href="#">Become a Volunteer</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
